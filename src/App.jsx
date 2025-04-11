@@ -1,7 +1,7 @@
 import AddTaskModal from "./components/AddTaskModal"
 import ToDoSection from "./components/ToDoSection"
 import Carousel from "./components/Carousel"
-import NavBar from "./components/navbar"
+import NavBar from "./components/Navbar"
 import { useState } from "react";
 
 let todosInitial = JSON.parse(localStorage.getItem("todosList")) || [];
