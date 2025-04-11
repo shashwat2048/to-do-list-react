@@ -40,7 +40,7 @@ const AddTaskModal = ({closeModal, setTodos, todos, editTodo}) =>{
     }
     return (
         <div onClick={closeModal} className="fixed top-0 left-0 w-screen h-screen bg-black/20 backdrop-blur-sm flex justify-center items-center border border-black/30">
-            <div className="h-[50vh] w-[80vw] lg:h-[70vh] lg:w-[40vw]bg-[#B4D2BA] rounded-lg flex flex-col gap-3 p-5 " onClick={(e)=>e.stopPropagation()}>
+            <div className="h-[50vh] w-[80vw] lg:h-[70vh] lg:w-[40vw] bg-[#B4D2BA] rounded-lg flex flex-col gap-3 p-5 " onClick={(e)=>e.stopPropagation()}>
                 <div className="flex w-[100%] justify-between">
                     <h2 className="text-2xl font-semibold  text-[#4B543B]">{editTodo ? "Edit Task" : "Add Task Details"}</h2>
                     <button onClick={closeModal} className="text-xl">❌</button>
