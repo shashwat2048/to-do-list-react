@@ -1,6 +1,6 @@
 import AddTaskModal from "./components/AddTaskModal"
 import ToDoSection from "./components/ToDoSection"
-import Carousel from "./components/carousel"
+import Carousel from "./components/Carousel"
 import NavBar from "./components/navbar"
 import { useState } from "react";
 
