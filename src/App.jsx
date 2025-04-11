@@ -25,8 +25,15 @@ function App() {
       <NavBar />
       <Carousel/>
       <ToDoSection openModal={openModal} todos={todos} setTodos={setTodos} setEditTodo={setEditTodo}/>
-      {isOpen && <AddTaskModal closeModal={closeModal} setTodos={setTodos} todos={todos} setEditTodo={setEditTodo}/>}
-      {editTodo && <AddTaskModal closeModal={closeModal} setTodos={setTodos} todos={todos} editTodo={editTodo} setEditTodo={setEditTodo}/>}
+      {(isOpen || editTodo) && (
+          <AddTaskModal
+            key={editTodo ? editTodo.id : "new"}
+            closeModal={closeModal}
+            setTodos={setTodos}
+            todos={todos}
+            editTodo={editTodo}
+          />
+      )}
       </div>
   )
 }
